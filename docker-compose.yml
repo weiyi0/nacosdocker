@@ -7,7 +7,7 @@ services:
       - ./env/nacos-standlone-mysql.env
     volumes:
       - ./standalone-logs/:/home/nacos/logs
-      - ./conf/application.properties:/home/nacos/conf/application.properties
+      # - ./conf/application.properties:/home/nacos/conf/application.properties
       - ./init.d/custom.properties:/home/nacos/init.d/custom.properties
     ports:
       - "8848:8848"
