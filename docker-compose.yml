@@ -1,8 +1,8 @@
-version: "2"
+version: "3"
 services:
   nacos:
     image: nacos/nacos-server:${NACOS_VERSION}
-    container_name: nacos-standalone-mysql
+    container_name: "nacos-standalone-mysql"
     env_file:
       - ./env/nacos-standlone-mysql.env
     volumes:
